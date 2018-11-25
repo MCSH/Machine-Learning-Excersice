@@ -10,7 +10,6 @@ def main():
     models = load_model('../model.pkl')
     model = models["model"]
     means = models["means"]
-    print(means)
     db = DB()
     for (id, x) in db.read():
         print(id)
